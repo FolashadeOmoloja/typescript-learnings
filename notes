@@ -1,0 +1,18 @@
+****************************************TsConfig File******************************************
+A tsconfig.json file is used in TypeScript projects to configure the TypeScript compiler (tsc) and specify various compiler options. TypeScript is a statically-typed superset of JavaScript that compiles down to plain JavaScript.
+
+The tsconfig.json file serves as a project-level configuration file that defines how TypeScript files should be compiled. It allows you to specify compiler options, include or exclude files from compilation, configure module resolution, target ECMAScript versions, enable strict type-checking rules, and more.
+
+Here are some common settings that can be configured in a tsconfig.json file:
+
+"compilerOptions": This section contains various compiler options, such as the target ECMAScript version ("target"), module system ("module"), output directory ("outDir"), source directory ("rootDir"), and strict type-checking options ("strict").
+
+"include" and "exclude": These settings specify which files should be included or excluded from compilation. You can use glob patterns to match file paths or directories.
+
+"files": Instead of using "include" and "exclude", you can explicitly list the files to be included for compilation in this section.
+
+"extends": You can extend or inherit configuration settings from another tsconfig.json file by specifying its path in this setting.
+
+"references": This setting is used in multi-project setups to establish references between TypeScript projects, allowing cross-project type checking and incremental compilation.
+
+By using a tsconfig.json file, you can ensure consistent compilation settings across your TypeScript project and easily manage the TypeScript compiler options.
